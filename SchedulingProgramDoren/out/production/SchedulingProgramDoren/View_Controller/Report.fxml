@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="581.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportController">
+   <children>
+      <Button layoutX="650.0" layoutY="300.0" mnemonicParsing="false" onAction="#onClose" text="Close" />
+      <TableView fx:id="tableview" layoutX="86.0" layoutY="68.0" prefHeight="200.0" prefWidth="370.0">
+        <columns>
+
+        </columns>
+      </TableView>
+
+
+       <TableView fx:id="customerTable" layoutX="27.0" layoutY="325.0" prefHeight="226.0" prefWidth="495.0">
+           <columns>
+               <TableColumn fx:id="colID" prefWidth="53.40000915527344" text="ID" />
+               <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="233.39999389648438" text="Address" />
+               <TableColumn fx:id="colPostal" minWidth="0.0" prefWidth="78.19992065429688" text="Post Code" />
+               <TableColumn fx:id="colPhone" minWidth="0.0" prefWidth="110.60003662109375" text="Phone" />
+               <TableColumn fx:id="colCreateDate" minWidth="0.0" prefWidth="133.0" text="Create Date" />
+               <TableColumn fx:id="colCreatedBy" minWidth="9.4000244140625" prefWidth="130.5999755859375" text="Created By" />
+               <TableColumn fx:id="colLastUpdate" prefWidth="138.7999267578125" text="Last Update" />
+               <TableColumn fx:id="colUpdateBy" prefWidth="134.800048828125" text="Last Updated By" />
+               <TableColumn fx:id="colDivisionID" minWidth="0.0" prefWidth="76.5999755859375" text="Division ID" />
+               <TableColumn fx:id="colName" minWidth="0.0" prefWidth="147.4000015258789" text="Name" />
+           </columns>
+       </TableView>
+       <ComboBox fx:id="DivIDCB" layoutX="27.0" layoutY="290.0" onAction="#onDivCB" prefWidth="150.0" promptText="Select Division ID" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="605.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.UpdateAppointmentController">
+    <children>
+        <ComboBox fx:id="custNameCB" layoutX="151.0" layoutY="372.0" prefWidth="174.0" promptText="Customer Name" />
+        <ComboBox fx:id="typeCB" layoutX="150.0" layoutY="417.0" prefWidth="174.0" promptText="Type" />
+        <DatePicker fx:id="startDP" layoutX="152.0" layoutY="209.0" />
+        <DatePicker fx:id="endDP" layoutX="151.0" layoutY="290.0" />
+        <TextField fx:id="apptmtIDField" disable="true" layoutX="154.0" layoutY="91.0" />
+        <TextField fx:id="titleField" layoutX="153.0" layoutY="130.0" prefWidth="174.0" />
+        <TextField fx:id="descField" layoutX="153.0" layoutY="169.0" prefHeight="26.0" prefWidth="174.0" />
+        <TableView fx:id="appointmentTable" layoutX="380.0" layoutY="110.0" prefHeight="360.0" prefWidth="650.0">
+            <columns>
+                <TableColumn fx:id="colApptmtID" prefWidth="97.20001411437988" text="Appointment ID" />
+                <TableColumn fx:id="colTitle" prefWidth="131.5999984741211" text="Title" />
+                <TableColumn fx:id="colDesc" prefWidth="186.39996337890625" text="Description" />
+                <TableColumn fx:id="colCust" prefWidth="121.0" text="Customer" />
+                <TableColumn fx:id="colType" prefWidth="115.0" text="Type" />
+                <TableColumn fx:id="colStart" prefWidth="158.5999755859375" text="Start" />
+                <TableColumn fx:id="colEnd" prefWidth="159.800048828125" text="End" />
+
+
+            </columns>
+        </TableView>
+
+        <Button layoutX="90.0" layoutY="485.0" mnemonicParsing="false" onAction="#onClear" text="Clear" />
+        <Button fx:id="updateButton" layoutX="135.0" layoutY="485.0" mnemonicParsing="false" onAction="#onUpdateApp" text="Save" />
+        <Button fx:id="backButton" layoutX="705.0" layoutY="535.0" mnemonicParsing="false" onAction="#onBackApp" text="Back" prefWidth="58.0" prefHeight="38.0" />
+        <Label layoutX="30.0" layoutY="22.0" prefHeight="34.0" prefWidth="300.0" text="Appointment Calender">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="52.0" layoutY="95.0" text="Appointment ID" />
+        <Label layoutX="52.0" layoutY="134.0" text="Title" />
+        <Label layoutX="52.0" layoutY="173.0" text="Description" />
+        <Label layoutX="52.0" layoutY="213.0" prefHeight="18.0" prefWidth="92.0" text="Start Date/Time" />
+        <Label layoutX="53.0" layoutY="290.0" text="End Date/Time" />
+        <Label layoutX="53.0" layoutY="376.0" text="Customer Name" />
+        <Label layoutX="53.0" layoutY="417.0" text="Type" />
+        <ComboBox fx:id="startHourCB" layoutX="150.0" layoutY="250.0" prefHeight="26.0" prefWidth="79.0" promptText="Hour" />
+        <ComboBox fx:id="startMinCB" layoutX="235.0" layoutY="250.0" prefHeight="26.0" prefWidth="86.0" promptText="Minute" />
+        <ComboBox fx:id="endHourCB" layoutX="150.0" layoutY="330.0" prefHeight="26.0" prefWidth="79.0" promptText="Hour" />
+        <ComboBox fx:id="endMinCB" layoutX="235.0" layoutY="330.0" prefHeight="26.0" prefWidth="86.0" promptText="Minute" />
+    </children>
+</AnchorPane>
